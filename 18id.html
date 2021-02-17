@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* id 값으로 css 적용  	 */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+	
+	.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+<script>
+	function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}</script>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+<button onclick=displayResult()>change
+	</button>
+
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</body>
+</html>
